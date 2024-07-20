@@ -2,19 +2,20 @@
 /* Import Switzer font */
 @import url('https://fonts.googleapis.com/css2?family=Switzer:wght@400;700&display=swap');
 
+/* src/FAQ.css */
 .faq-container {
   display: flex;
   flex-direction: column; /* Stack items vertically */
   align-items: center; /* Center align items horizontally */
   width: 80%;
-  margin: 0 auto;
+  margin: 20px auto 0; /* Add top margin to space out from other elements */
   font-family: 'Switzer', sans-serif;
 }
 
 .faq-header-container {
   display: flex;
   flex-direction: column; /* Stack title and subtitle vertically */
-  align-items: flex-start; /* Center align items horizontally */
+  align-items: flex-start; /* Align items to the left */
   margin-bottom: 20px; /* Space between header and content */
   width: 100%;
 }
@@ -26,6 +27,7 @@
   color: #888; /* Grey color */
   font-weight: normal; /* Normal font weight for smaller text */
   margin: 0; /* Reset margin to align with photo */
+  padding-bottom: 10px; /* Padding below the subtitle for spacing */
 }
 
 .faq-icon {
@@ -38,6 +40,7 @@
   font-size: 24px; /* Adjust font size as needed */
   font-weight: bold;
   margin: 0; /* Reset margin to align with photo */
+  padding-bottom: 20px; /* Padding below the main title for spacing */
 }
 
 .faq-content {
