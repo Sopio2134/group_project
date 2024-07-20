@@ -16,17 +16,20 @@
 }
 
 .faq-image {
-  flex: 1;
+  flex: 1; /* Adjust as needed to align with the questions section */
   margin-right: 20px; /* Adjust spacing as needed */
 }
 
 .faq-image img {
-  max-width: 100%;
-  height: auto;
+  width: auto; /* Maintain aspect ratio */
+  height: 300px; /* Set a fixed height to increase length */
+  max-width: 100%; /* Ensure the image doesn't overflow */
 }
 
 .faq-questions {
-  flex: 3;
+  flex: 1; /* Adjust to make it smaller compared to the image container */
+  display: flex;
+  flex-direction: column;
 }
 
 .faq-header {
@@ -65,9 +68,8 @@
 }
 
 .faq-answer {
-  margin-top: 10px;
-  padding-left: 20px;
   font-size: 14px;
+  padding: 0; /* Remove padding to align with question */
 }
 
 .faq-toggle {

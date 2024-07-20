@@ -39,14 +39,15 @@ const FAQ = () => {
                 {item.question}
                 <span className="faq-toggle">{visibleIndex === index ? '-' : '+'}</span>
               </div>
-              {visibleIndex === index && (
+              {visibleIndex === index ? (
                 <>
                   <div className="faq-answer">{item.answer}</div>
-                  {/* No divider here if answer is visible */}
+                  {<div className="faq-divider">___________</div>}
                 </>
+              ) : (
+                // Add divider if answer is not visible
+                <div className="faq-divider">___________</div>
               )}
-              {/* Add divider if the answer is not visible */}
-              {(visibleIndex !== index) && <div className="faq-divider">___________</div>}
             </div>
           ))}
         </div>
