@@ -18,18 +18,20 @@
 
 .faq-content {
   display: flex;
-  align-items: flex-start;
+  align-items: center; /* Center items vertically */
   width: 100%;
 }
 
 .faq-image {
   flex: 1;
-  margin-right: 20px; /* Space between image and questions */
+  margin-right: 60px; /* Increase space between image and questions */
+  display: flex;
+  align-items: center; /* Center the image vertically */
 }
 
 .faq-image img {
   width: auto; /* Maintain aspect ratio */
-  height: 350px; /* Make photo a bit taller */
+  height: 500px; /* Increase the height of the image */
   max-width: 100%; /* Ensure the image doesn't overflow */
 }
 
@@ -37,6 +39,7 @@
   flex: 2; /* Adjust to make it smaller compared to the image container */
   display: flex;
   flex-direction: column;
+  justify-content: center; /* Center questions vertically */
 }
 
 .faq-subtitle {
@@ -54,6 +57,7 @@
 .faq-main-title {
   font-size: 24px; /* Adjust font size as needed */
   font-weight: bold;
+  margin: 0; /* Ensure no additional margin */
 }
 
 .faq-item {

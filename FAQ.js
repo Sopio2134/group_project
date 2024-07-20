@@ -27,7 +27,7 @@ const FAQ = () => {
           <img src={icon} alt="FAQ Icon" className="faq-icon" />
           FAQ's
         </div>
-        <div className="faq-main-title">FREQUENTLY ASKED QUESTIONS</div>
+        <h1 className="faq-main-title">Frequently Asked Questions</h1>
       </div>
       <div className="faq-content">
         <div className="faq-image">
@@ -43,7 +43,7 @@ const FAQ = () => {
               {visibleIndex === index ? (
                 <>
                   <div className="faq-answer">{item.answer}</div>
-                  {<div className="faq-divider faq-divider-black"></div>}
+                  <div className="faq-divider faq-divider-black"></div>
                 </>
               ) : (
                 <div className="faq-divider faq-divider-gray"></div>
