@@ -1,6 +1,8 @@
 // src/FAQ.js
 import React, { useState } from 'react';
 import './FAQ.css';
+import faqImage from './faq.jpg'; // Import the FAQ image
+import icon from './icon.svg'; // Import the new icon
 
 const FAQ = () => {
   const [visibleIndex, setVisibleIndex] = useState(null);
@@ -20,20 +22,38 @@ const FAQ = () => {
 
   return (
     <div className="faq-container">
-      {questions.map((item, index) => (
-        <div key={index} className="faq-item">
-          <div className="faq-question" onClick={() => toggleVisibility(index)}>
-            {item.question}
-            <span className="faq-toggle">{visibleIndex === index ? '-' : '+'}</span>
-          </div>
-          {visibleIndex === index && (
-            <>
-              <div className="faq-answer">{item.answer}</div>
-              {index < questions.length - 1 && <div className="faq-divider">___________</div>}
-            </>
-          )}
+      <div className="faq-header">
+        <div className="faq-subtitle">
+          <img src={icon} alt="FAQ Icon" className="faq-icon" />
+          <span>FAQ's</span>
         </div>
-      ))}
+      </div>
+      <div className="faq-main-title">
+        <span>FREQUENTLY ASKED QUESTIONS</span>
+      </div>
+      <div className="faq-content">
+        <div className="faq-image">
+          <img src={faqImage} alt="FAQ Illustration" />
+        </div>
+        <div className="faq-questions">
+          {questions.map((item, index) => (
+            <div key={index} className="faq-item">
+              <div className="faq-question" onClick={() => toggleVisibility(index)}>
+                {item.question}
+                <span className="faq-toggle">{visibleIndex === index ? '-' : '+'}</span>
+              </div>
+              {visibleIndex === index && (
+                <>
+                  <div className="faq-answer">{item.answer}</div>
+                  {/* No divider here if answer is visible */}
+                </>
+              )}
+              {/* Add divider if it's not the last item or if the answer is not visible */}
+              {(index < questions.length - 1 && visibleIndex !== index) && <div className="faq-divider">___________</div>}
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 };
