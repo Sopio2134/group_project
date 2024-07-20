@@ -1,6 +1,6 @@
 /* src/FAQ.css */
 /* Import Switzer font */
-@import url('https://fonts.googleapis.com/css2?family=Switzer:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Switzer:wght@400;500;700&display=swap');
 
 /* src/FAQ.css */
 .faq-container {
@@ -37,10 +37,11 @@
 }
 
 .faq-main-title {
-  font-size: 24px; /* Adjust font size as needed */
-  font-weight: bold;
+  font-size: 48px; /* Set font size to 48px */
+  font-weight: 600; /* Set font weight to 500 */
   margin: 0; /* Reset margin to align with photo */
   padding-bottom: 20px; /* Padding below the main title for spacing */
+  line-height: 150%; /* Line height set to 150% of font size */
 }
 
 .faq-content {
