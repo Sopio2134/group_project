@@ -1,14 +1,12 @@
-/* src/FAQ.css */
 /* Import Switzer font */
 @import url('https://fonts.googleapis.com/css2?family=Switzer:wght@400;500;700&display=swap');
 
-/* src/FAQ.css */
 .faq-container {
   display: flex;
   flex-direction: column; /* Stack items vertically */
   align-items: center; /* Center align items horizontally */
   width: 80%;
-  margin: 20px auto 0; /* Add top margin to space out from other elements */
+  margin: 60px auto 0; /* Add more top margin to space out from other elements */
   font-family: 'Switzer', sans-serif;
 }
 
@@ -23,22 +21,22 @@
 .faq-subtitle {
   display: flex;
   align-items: center;
-  font-size: 16px; /* Smaller font size */
-  color: #888; /* Grey color */
+  font-size: 14px; /* Smaller font size */
+  color: #333; /* Grey color */
   font-weight: normal; /* Normal font weight for smaller text */
   margin: 0; /* Reset margin to align with photo */
   padding-bottom: 10px; /* Padding below the subtitle for spacing */
 }
 
 .faq-icon {
-  width: 24px; /* Adjust size as needed */
+  width: 16px; /* Adjust size as needed */
   height: auto;
   margin-right: 8px; /* Space between icon and text */
 }
 
 .faq-main-title {
   font-size: 48px; /* Set font size to 48px */
-  font-weight: 600; /* Set font weight to 500 */
+  font-weight: 500; /* Set font weight to 500 */
   margin: 0; /* Reset margin to align with photo */
   padding-bottom: 20px; /* Padding below the main title for spacing */
   line-height: 150%; /* Line height set to 150% of font size */
@@ -64,7 +62,7 @@
 }
 
 .faq-questions {
-  flex: 2; /* Adjust to make it smaller compared to the image container */
+  flex: 2; /* Make the questions container narrower */
   display: flex;
   flex-direction: column;
   justify-content: center; /* Center questions vertically */
@@ -76,16 +74,21 @@
 
 .faq-question {
   cursor: pointer;
-  font-size: 16px;
+  font-size: 18px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 0; /* Adjust padding as needed */
+  margin-bottom: 0;
+  font-weight: 550;
+  line-height: 170%;
 }
 
 .faq-answer {
   font-size: 14px;
   padding: 0; /* Remove padding to align with question */
+  font-weight: 400;
+  line-height: 150%; 
 }
 
 .faq-toggle {
@@ -107,4 +110,4 @@
 .faq-divider-black {
   color: #000;
   border-bottom: 1px solid #000; /* Black color */
-} 
+}
