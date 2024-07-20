@@ -1,0 +1,110 @@
+/* src/FAQ.css */
+/* Import Switzer font */
+@import url('https://fonts.googleapis.com/css2?family=Switzer:wght@400;500;700&display=swap');
+
+/* src/FAQ.css */
+.faq-container {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center align items horizontally */
+  width: 80%;
+  margin: 20px auto 0; /* Add top margin to space out from other elements */
+  font-family: 'Switzer', sans-serif;
+}
+
+.faq-header-container {
+  display: flex;
+  flex-direction: column; /* Stack title and subtitle vertically */
+  align-items: flex-start; /* Align items to the left */
+  margin-bottom: 20px; /* Space between header and content */
+  width: 100%;
+}
+
+.faq-subtitle {
+  display: flex;
+  align-items: center;
+  font-size: 16px; /* Smaller font size */
+  color: #888; /* Grey color */
+  font-weight: normal; /* Normal font weight for smaller text */
+  margin: 0; /* Reset margin to align with photo */
+  padding-bottom: 10px; /* Padding below the subtitle for spacing */
+}
+
+.faq-icon {
+  width: 24px; /* Adjust size as needed */
+  height: auto;
+  margin-right: 8px; /* Space between icon and text */
+}
+
+.faq-main-title {
+  font-size: 48px; /* Set font size to 48px */
+  font-weight: 600; /* Set font weight to 500 */
+  margin: 0; /* Reset margin to align with photo */
+  padding-bottom: 20px; /* Padding below the main title for spacing */
+  line-height: 150%; /* Line height set to 150% of font size */
+}
+
+.faq-content {
+  display: flex;
+  align-items: center; /* Center items vertically */
+  width: 100%;
+}
+
+.faq-image {
+  flex: 1;
+  margin-right: 60px; /* Increase space between image and questions */
+  display: flex;
+  align-items: center; /* Center the image vertically */
+}
+
+.faq-image img {
+  width: auto; /* Maintain aspect ratio */
+  height: 500px; /* Increase the height of the image */
+  max-width: 100%; /* Ensure the image doesn't overflow */
+}
+
+.faq-questions {
+  flex: 2; /* Adjust to make it smaller compared to the image container */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center questions vertically */
+}
+
+.faq-item {
+  margin-bottom: 0; /* Ensure no extra margin */
+}
+
+.faq-question {
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0; /* Adjust padding as needed */
+}
+
+.faq-answer {
+  font-size: 14px;
+  padding: 0; /* Remove padding to align with question */
+}
+
+.faq-toggle {
+  margin-left: 10px;
+}
+
+.faq-divider {
+  margin-top: 10px; /* Adjust spacing if needed */
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+}
+
+.faq-divider-gray {
+  color: #ccc;
+  border-bottom: 1px solid #ccc; /* Gray color */
+}
+
+.faq-divider-black {
+  color: #000;
+  border-bottom: 1px solid #000; /* Black color */
+}
