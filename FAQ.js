@@ -22,20 +22,17 @@ const FAQ = () => {
 
   return (
     <div className="faq-container">
-      <div className="faq-header">
-        <div className="faq-subtitle">
-          <img src={icon} alt="FAQ Icon" className="faq-icon" />
-          <span>FAQ's</span>
-        </div>
-      </div>
-      <div className="faq-main-title">
-        <span>FREQUENTLY ASKED QUESTIONS</span>
-      </div>
       <div className="faq-content">
         <div className="faq-image">
           <img src={faqImage} alt="FAQ Illustration" />
         </div>
         <div className="faq-questions">
+          <div className="faq-header">
+            <div className="faq-subtitle">
+              <img src={icon} alt="FAQ Icon" className="faq-icon" />
+              <span>FAQ's</span>
+            </div>
+          </div>
           {questions.map((item, index) => (
             <div key={index} className="faq-item">
               <div className="faq-question" onClick={() => toggleVisibility(index)}>
@@ -53,6 +50,9 @@ const FAQ = () => {
             </div>
           ))}
         </div>
+      </div>
+      <div className="faq-main-title">
+        <span>FREQUENTLY ASKED QUESTIONS</span>
       </div>
     </div>
   );

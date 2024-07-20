@@ -1,15 +1,32 @@
 /* src/FAQ.css */
-
-/* Add this at the top of your FAQ.css */
-@import url('https://fonts.googleapis.com/css2?family=Switzer:wght@400&display=swap');
-
-/* src/FAQ.css */
 .faq-container {
   display: flex;
-  align-items: flex-start;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center align items horizontally */
   width: 80%;
   margin: 0 auto;
   font-family: 'Switzer', sans-serif;
+}
+
+.faq-content {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 20px; /* Space between FAQ content and title */
+}
+
+.faq-image {
+  flex: 1;
+  margin-right: 20px; /* Adjust spacing as needed */
+}
+
+.faq-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.faq-questions {
+  flex: 3;
 }
 
 .faq-header {
@@ -30,28 +47,8 @@
 }
 
 .faq-main-title {
-  margin-bottom: 20px;
   font-size: 24px; /* Adjust font size as needed */
   font-weight: bold;
-}
-
-.faq-content {
-  display: flex;
-  align-items: flex-start;
-}
-
-.faq-image {
-  flex: 1;
-  margin-right: 20px; /* Adjust spacing as needed */
-}
-
-.faq-image img {
-  max-width: 100%;
-  height: auto;
-}
-
-.faq-questions {
-  flex: 3;
 }
 
 .faq-item {
