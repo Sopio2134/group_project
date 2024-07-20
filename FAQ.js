@@ -42,11 +42,12 @@ const FAQ = () => {
               {visibleIndex === index ? (
                 <>
                   <div className="faq-answer">{item.answer}</div>
-                  {<div className="faq-divider">___________</div>}
+                  {/* Apply black divider color when answer is visible */}
+                  <div className="faq-divider faq-divider-black">___________</div>
                 </>
               ) : (
-                // Add divider if answer is not visible
-                <div className="faq-divider">___________</div>
+                // Apply gray divider color when answer is not visible
+                <div className="faq-divider faq-divider-gray">___________</div>
               )}
             </div>
           ))}

@@ -80,7 +80,15 @@
   margin-top: 10px;
   width: 100%;
   text-align: center;
-  color: #ccc;
-  border-bottom: 1px solid #ccc; /* Ensure it's a single line */
   display: inline-block;
+}
+
+.faq-divider-gray {
+  color: #ccc;
+  border-bottom: 1px solid #ccc; /* Gray color */
+}
+
+.faq-divider-black {
+  color: #000;
+  border-bottom: 1px solid #000; /* Black color */
 }
