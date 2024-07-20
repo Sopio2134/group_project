@@ -22,17 +22,18 @@ const FAQ = () => {
 
   return (
     <div className="faq-container">
+      <div className="faq-header-container">
+        <div className="faq-subtitle">
+          <img src={icon} alt="FAQ Icon" className="faq-icon" />
+          FAQ's
+        </div>
+        <div className="faq-main-title">FREQUENTLY ASKED QUESTIONS</div>
+      </div>
       <div className="faq-content">
         <div className="faq-image">
           <img src={faqImage} alt="FAQ Illustration" />
         </div>
         <div className="faq-questions">
-          <div className="faq-header">
-            <div className="faq-subtitle">
-              <img src={icon} alt="FAQ Icon" className="faq-icon" />
-              <span>FAQ's</span>
-            </div>
-          </div>
           {questions.map((item, index) => (
             <div key={index} className="faq-item">
               <div className="faq-question" onClick={() => toggleVisibility(index)}>
@@ -42,12 +43,10 @@ const FAQ = () => {
               {visibleIndex === index ? (
                 <>
                   <div className="faq-answer">{item.answer}</div>
-                  {/* Apply black divider color when answer is visible */}
-                  <div className="faq-divider faq-divider-black">___________</div>
+                  {<div className="faq-divider faq-divider-black"></div>}
                 </>
               ) : (
-                // Apply gray divider color when answer is not visible
-                <div className="faq-divider faq-divider-gray">___________</div>
+                <div className="faq-divider faq-divider-gray"></div>
               )}
             </div>
           ))}

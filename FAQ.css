@@ -8,39 +8,41 @@
   font-family: 'Switzer', sans-serif;
 }
 
+.faq-header-container {
+  display: flex;
+  flex-direction: column; /* Stack title and subtitle vertically */
+  align-items: center; /* Center align items horizontally */
+  margin-bottom: 20px; /* Space between header and content */
+  text-align: center; /* Center text */
+}
+
 .faq-content {
   display: flex;
   align-items: flex-start;
   width: 100%;
-  margin-bottom: 20px; /* Space between FAQ content and title */
 }
 
 .faq-image {
-  flex: 1; /* Adjust as needed to align with the questions section */
-  margin-right: 20px; /* Adjust spacing as needed */
+  flex: 1;
+  margin-right: 20px; /* Space between image and questions */
 }
 
 .faq-image img {
   width: auto; /* Maintain aspect ratio */
-  height: 300px; /* Set a fixed height to increase length */
+  height: 350px; /* Make photo a bit taller */
   max-width: 100%; /* Ensure the image doesn't overflow */
 }
 
 .faq-questions {
-  flex: 1; /* Adjust to make it smaller compared to the image container */
+  flex: 2; /* Adjust to make it smaller compared to the image container */
   display: flex;
   flex-direction: column;
 }
 
-.faq-header {
-  margin-bottom: 10px;
-}
-
 .faq-subtitle {
-  display: flex;
-  align-items: center;
-  font-size: 20px; /* Adjust font size as needed */
-  font-weight: bold;
+  font-size: 16px; /* Smaller font size */
+  color: #888; /* Grey color */
+  font-weight: normal; /* Normal font weight for smaller text */
 }
 
 .faq-icon {
@@ -77,7 +79,7 @@
 }
 
 .faq-divider {
-  margin-top: 10px;
+  margin-top: 10px; /* Adjust spacing if needed */
   width: 100%;
   text-align: center;
   display: inline-block;
