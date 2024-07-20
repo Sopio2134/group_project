@@ -1,0 +1,44 @@
+/* src/FAQ.css */
+
+/* Add this at the top of your FAQ.css */
+@import url('https://fonts.googleapis.com/css2?family=Switzer:wght@400&display=swap');
+
+.faq-container {
+  width: 80%;
+  margin: 0 auto;
+  font-family: 'Switzer', sans-serif;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+}
+
+.faq-question {
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.faq-answer {
+  margin-top: 10px;
+  padding-left: 20px;
+  font-size: 14px;
+}
+
+.faq-toggle {
+  margin-left: 10px;
+}
+
+.faq-divider {
+  margin-top: 10px;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #ccc;
+}
