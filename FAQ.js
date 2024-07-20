@@ -51,9 +51,6 @@ const FAQ = () => {
           ))}
         </div>
       </div>
-      <div className="faq-main-title">
-        <span>FREQUENTLY ASKED QUESTIONS</span>
-      </div>
     </div>
   );
 };
