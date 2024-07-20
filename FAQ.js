@@ -45,8 +45,8 @@ const FAQ = () => {
                   {/* No divider here if answer is visible */}
                 </>
               )}
-              {/* Add divider if it's not the last item or if the answer is not visible */}
-              {(index < questions.length - 1 && visibleIndex !== index) && <div className="faq-divider">___________</div>}
+              {/* Add divider if the answer is not visible */}
+              {(visibleIndex !== index) && <div className="faq-divider">___________</div>}
             </div>
           ))}
         </div>
